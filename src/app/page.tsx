@@ -9,7 +9,7 @@ export default function HomePage() {
       <p className="mt-2 text-gray-300">Explore the latest articles on web development.</p>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {posts.map((post, index) => (
+        {posts.map((post) => (
           <div key={post.id} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <Image src={`https://loremflickr.com/500/300?random=${post.id}`} alt={post.title} width={500} height={300} className="w-full h-40 object-cover" />
             <div className="p-4">
